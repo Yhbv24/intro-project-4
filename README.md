@@ -5,6 +5,10 @@
 
 The goal of this project is to create a fake pizza restaurant. It will use a form to take the order, and allow the "customer" to customize the pizza and order it.
 
+## Get Started
+
+To open the file, either clone the GitHub repository at (https://github.com/Yhbv24/intro-project-4) or visit the GH-Pages site here: (https://yhbv24.github.io/intro-project-4/).
+
 ## Specifications
 
 1. Set up menu form with sections for crust style, pizza size, and topping selection.
