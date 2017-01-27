@@ -1,0 +1,80 @@
+/*****BODY*****/
+
+body {
+  font-family: 'Amatic SC', cursive;
+  background-color: #acd6d6;
+}
+
+/*****NAV BAR*****/
+
+#nav_bar {
+  text-align: center;
+  margin-top: -15px;
+}
+
+#nav_bar li {
+  display: inline-block;
+  list-style: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 2em;
+}
+
+#nav_bar:first-child {
+  padding-left: 0;
+}
+
+/*****FOOTER*****/
+
+footer {
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+footer li {
+  display: inline-block;
+  padding-right: 20px;
+  margin: 0 10px;
+}
+
+footer img {
+  display: inline-block;
+  margin-top: 20px;
+  height: 40px;
+}
+
+#email { /* Email image needs to be styled independently due to round image; rest are square */
+  height: 48px;
+}
+
+/*****GENERAL CONTENT*****/
+
+.jumbotron {
+  font-size: 5em;
+  background-color: #dd9190;
+}
+
+.content {
+  font-size: 2em;
+}
+
+.content h4 {
+  font-size: 1.3em;
+}
+
+/*****LINKS*****/
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  transition: color 0.3s ease;
+  color: #ea5738;
+}
