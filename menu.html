@@ -12,57 +12,69 @@
   <body>
     <div class="container">
       <h1 class=jumbotron>Menu</h1>
-      <nav>
-        <ul id="nav_bar">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="row">
-        <div class="col-xs-12 content">
-          <h4>Menu</h4>
-          <p>We source the finest ingredients, and offer gluten-free and vegan options. Have a look, and send your order our way.</p>
+        <nav>
+          <ul id="nav_bar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+
+      <div id="menu">
+        <div class="row">
+          <div class="col-xs-12 content">
+            <h4>Menu</h4>
+            <p>We source the finest ingredients, and offer gluten-free and vegan options. Have a look, and send your order our way.</p>
+          </div>
         </div>
+
+        <form id="pizza_submit" class="form-group">
+          <div class="row">
+            <div class="col-xs-4 content">
+              <label for="crust">First, select your crust:</label><br>
+              <select name="crust" id="crust_style">
+                <option name="crust" value="thin">Thin Crust</option>
+                <option name="crust" value="thick">Thick Crust</option>
+                <option name="crust" value="gluten_free">Gluten-Free - $0.50</option>
+              </select>
+            </div>
+
+            <div class="col-xs-4 content radio">
+              <label for="size"><strong>Then, select your size:</strong></label><br>
+                <input type="radio" name="size" value="small">&#160; Small - $8.00<br>
+                <input type="radio" name="size" value="medium">&#160; Medium - $11.00<br>
+                <input type="radio" name="size" value="large">&#160; Large- $14.00<br>
+            </div>
+
+            <div class="col-xs-4 content checkbox">
+              <label for="toppings"><strong>Finally, select your toppings (all toppings $0.75):</strong></label><br>
+                <input type="checkbox" name="toppings" value="pepperoni" id="2">&#160; Pepperoni<br>
+                <input type="checkbox" name="toppings" value="sausage" id="3">&#160; Sausage<br>
+                <input type="checkbox" name="toppings" value="mushrooms" id="4">&#160; Mushrooms<br>
+                <input type="checkbox" name="toppings" value="onions" id="5">&#160; Onions<br>
+                <input type="checkbox" name="toppings" value="peppers" id="6">&#160; Peppers<br>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-xs-12 content" id="order_button">
+              <button type="submit" class="btn btn-default">Send Order</button>
+              <button type="reset" class="btn btn-default">Reset</button>
+            </div>
+          </div>
+        </form>
       </div>
 
-      <form id="pizza_submit" class="form-group">
+      <div id="receipt_div">
         <div class="row">
-          <div class="col-xs-4 content">
-            <label for="crust">First, select your crust:</label><br>
-            <select name="crust" id="crust_style">
-              <option name="crust" value="thin">Thin Crust</option>
-              <option name="crust" value="thick">Thick Crust</option>
-              <option name="crust" value="gluten_free">Gluten-Free - $0.50</option>
-            </select>
-          </div>
-
-          <div class="col-xs-4 content radio">
-            <label for="size"><strong>Then, select your size:</strong></label><br>
-              <input type="radio" name="size" value="small">&#160; Small - $8.00<br>
-              <input type="radio" name="size" value="medium">&#160; Medium - $11.00<br>
-              <input type="radio" name="size" value="large">&#160; Large- $14.00<br>
-          </div>
-
-          <div class="col-xs-4 content checkbox">
-            <label for="toppings"><strong>Finally, select your toppings (all toppings $0.75):</strong></label><br>
-              <input type="checkbox" name="toppings" value="plain" id="1">&#160; Plain - No additional cost<br>
-              <input type="checkbox" name="toppings" value="pepperoni" id="2">&#160; Pepperoni<br>
-              <input type="checkbox" name="toppings" value="sausage" id="3">&#160; Sausage<br>
-              <input type="checkbox" name="toppings" value="mushrooms" id="4">&#160; Mushrooms<br>
-              <input type="checkbox" name="toppings" value="onions" id="5">&#160; Onions<br>
-              <input type="checkbox" name="toppings" value="peppers" id="6">&#160; Peppers<br>
+          <div class="col-xs-12">
+            <h4>Your total:</h4>
+            <ul id="receipt_list">
+              <!-- JQuery will append item(s) ordered and the total here-->
+            </ul>
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-xs-12 content" id="order_button">
-            <button type="submit" class="btn btn-default">Send Order</button>
-            <button type="reset" class="btn btn-default">Reset</button>
-          </div>
-        </div>
-      </form>
-
+      </div>
       <footer>
         <ul>
           <li><a href="tel:123-456-7890"><img src="img/phone_logo.jpg" alt="Give us a call at (123) 456-7890!"></a></li>
