@@ -26,10 +26,6 @@ Pizza.prototype.price = function() { // Builds price for pizza based on customer
   return this.price;
 };
 
-Pizza.prototype.capitalize = function() {
-  return this.crust.charAt(0).toUpperCase() + this.slice(1);
-};
-
 //*****FRONT-END*****
 
 $(function() {
@@ -48,7 +44,15 @@ $(function() {
     var newPizzaPrice = newPizzaOrder.price();
 
     $("#menu").fadeOut(500);
-    $("#receipt_list").append("<li>" + newPizzaOrder.capitalize() + "</li>")
-    $("#receipt").fadeIn(500);
+    $("#receipt_div").fadeIn(500);
+
+    $("#output_crust").append("<li>" + newPizzaOrder.crust + "</li>");
+    $("#output_size").append("<li>" + newPizzaOrder.size + "</li>");
+
+    newPizzaOrder.toppings.forEach(function(topping) { // Displays each topping in the array as its own LI
+      $("#output_toppings").append("<li>" + topping + "</li>");
+    });
+
+    $("#total_price").text("$" + newPizzaOrder.price); // Outputs total price of pizza selection
   });
 });

@@ -13,7 +13,17 @@ The goal of this project is to create a fake pizza restaurant. It will use a for
 
 2. Upon form submit, gather user data and turn that information into variables.
    * Input: Thin crust, small, pepperoni
-   * Output: .crust = thin, .size = small, .toppings = pepperoni
+   * Output: Pizza.crust = thin, Pizza.size = small, Pizza.toppings = pepperoni
+
+3. Create "Pizza" object, which represents the pizza shop. This object will encapsulate the size, crust, and toppings of the pizza.
+
+4. Create a Pizza.prototype method to determine how much the pizza costs based on the other variables.
+
+5. Once the input data is stored in the variables, call the Pizza.price() method to calculate the price of the pizza.
+   * Input: gluten-free crust (50¢), small size ($8), and pepperoni (75¢)
+   * Output: Total pizza cost: $9.25
+
+6. Once the total has been calculated, output the result for the customer to see.
 
 ## Licensing
 

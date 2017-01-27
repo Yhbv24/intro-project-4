@@ -67,13 +67,33 @@
 
       <div id="receipt_div">
         <div class="row">
-          <div class="col-xs-12">
-            <h4>Your total:</h4>
-            <ul id="receipt_list">
-              <!-- JQuery will append item(s) ordered and the total here-->
+          <h4>Here's your order!</h4>
+          <div class="col-xs-4">
+            <p>Pizza crust:</p>
+            <ul id="output_crust">
+              <!-- THe pizza size will output here -->
+            </ul>
+          </div>
+
+          <div class="col-xs-4">
+            <p>Pizza size:</p>
+            <ul id="output_size">
+              <!-- THe pizza size will output here -->
+            </ul>
+          </div>
+
+          <div class="col-xs-4">
+            <p>Pizza toppings:</p>
+            <ul id="output_toppings">
+              <!-- THe pizza size will output here -->
             </ul>
           </div>
         </div>
+
+        <div class="row">
+          <div class="col-xs-12" id="center_receipt">
+            <p>Your total is: <span id="total_price"></span>.</p>
+          </div>
       </div>
       <footer>
         <ul>

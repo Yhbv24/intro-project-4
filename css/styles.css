@@ -84,6 +84,28 @@ footer h5 {
   text-align: center;
 }
 
+#pizza_col {
+  text-align: center;
+}
+
+#home_pizza {
+  height: 500px;
+  width: 500px;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin-bottom: 20px;
+}
+
+#receipt_div {
+  display: none;
+  font-size: 2em;
+}
+
+#center_receipt {
+  text-align: center;
+  font-size: 2em;
+}
+
 /*****LINKS*****/
 
 a {
