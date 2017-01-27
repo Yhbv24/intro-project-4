@@ -7,7 +7,13 @@ The goal of this project is to create a fake pizza restaurant. It will use a for
 
 ## Specifications
 
-1. Create basic site layout with links to Menu page and About page
+1. Set up menu form with sections for crust style, pizza size, and topping selection.
+   * Input: Dropdown selection for crust style, radio buttons pizza size, and checkboxes for toppings.
+   * Output: No output at this stage.
+
+2. Upon form submit, gather user data and turn that information into variables.
+   * Input: Thin crust, small, pepperoni
+   * Output: Pizza.crust = thin, Pizza.size = small, Pizza.toppings = pepperoni
 
 ## Licensing
 

@@ -20,23 +20,58 @@
         </ul>
       </nav>
       <div class="row">
-        <div class="col-xs-6 content">
-          <h4>Welcome!</h4>
-          <p>This here's the finest pizza in the land. We source our ingredients locally, as well as globally, to offer you the finest in quality. Take a look at our menu, and feel free to place an order!</p>
-        </div>
-        <div class="col-xs-6 content">
-
+        <div class="col-xs-12 content">
+          <h4>Menu</h4>
+          <p>We source the finest ingredients, and offer gluten-free and vegan options. Have a look, and send your order our way.</p>
         </div>
       </div>
+
+      <form id="pizza_submit" class="form-group">
+        <div class="row">
+          <div class="col-xs-4 content">
+            <label for="crust">First, select your crust:</label><br>
+            <select name="crust">
+              <option name="crust" value="none">Crust style</option>
+              <option name="crust" value="thick">Thick Crust</option>
+              <option name="crust" value="thin">Thin Crust</option>
+              <option name="crust" value="gluten_free">Gluten-Free - $0.50</option>
+            </select>
+          </div>
+
+          <div class="col-xs-4 content">
+            <label for="size">Then, select your size:</label><br>
+              <input type="radio" name="size" value="small">&#160; Small - $8.00<br>
+              <input type="radio" name="size" value="medium">&#160; Medium - $11.00<br>
+              <input type="radio" name="size" value="large">&#160; Large- $14.00<br>
+          </div>
+
+          <div class="col-xs-4 content">
+            <label for="toppings">Finally, select your toppings:</label><br>
+              <input type="checkbox" name="toppings" value="plain">&#160; Plain - No additional cost<br>
+              <input type="checkbox" name="toppings" value="pepperoni">&#160; Pepperoni - $0.75<br>
+              <input type="checkbox" name="toppings" value="sausage">&#160; Sausage - $0.75<br>
+              <input type="checkbox" name="toppings" value="mushrooms">&#160; Mushrooms - $0.50<br>
+              <input type="checkbox" name="toppings" value="onions">&#160; Onions - $0.50<br>
+              <input type="checkbox" name="toppings" value="peppers">&#160; Peppers - $0.50<br>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 content" id="order_button">
+            <button type="submit" class="btn">Send Order</button>
+          </div>
+        </div>
+      </form>
 
       <footer>
         <ul>
           <li><a href="tel:123-456-7890"><img src="img/phone_logo.jpg" alt="Give us a call at (123) 456-7890!"></a></li>
           <li><a href="mailto:ashlaidlaw@gmail.com"><img src="img/email_logo.png" alt="Email us at ashlaidlaw@gmail.com!" id="email"></a></li>
-          <li><a href="https://www.facebook.com/ashlaidlaw1"><img src="img/facebook_logo.jpg" alt="Find us on Facebook!"></a></li>
-          <li><a href="https://twitter.com/?lang=en0"><img src="img/twitter_logo.jpg" alt="Find us on Twitter!"></a></li>
-          <li><a href="https://www.instagram.com/?hl=en"><img src="img/instagram_logo.jpg" alt="Take a look at our photos on Instagram!"></a></li>
+          <li><a href="https://www.facebook.com/ashlaidlaw1" target="_blank"><img src="img/facebook_logo.jpg" alt="Find us on Facebook!"></a></li>
+          <li><a href="https://twitter.com/?lang=en0" target="_blank"><img src="img/twitter_logo.jpg" alt="Find us on Twitter!"></a></li>
+          <li><a href="https://www.instagram.com/?hl=en" target="_blank"><img src="img/instagram_logo.jpg" alt="Take a look at our photos on Instagram!"></a></li>
         </ul>
+        <h5>&#xA9; Ash Laidlaw 2017</h5>
       </footer>
     </div>
   </body>
