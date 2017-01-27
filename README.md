@@ -13,7 +13,7 @@ The goal of this project is to create a fake pizza restaurant. It will use a for
 
 2. Upon form submit, gather user data and turn that information into variables.
    * Input: Thin crust, small, pepperoni
-   * Output: Pizza.crust = thin, Pizza.size = small, Pizza.toppings = pepperoni
+   * Output: .crust = thin, .size = small, .toppings = pepperoni
 
 ## Licensing
 
